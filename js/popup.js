@@ -2,7 +2,7 @@ $(document).ready(function() {
         
     $(".popup").hide();
 
-    $("#button1").click(function(e) {
+    $("#button-open").click(function(e) {
 
         openPopup();
 
@@ -34,7 +34,7 @@ function openPopup(){
 
     $("#background").fadeTo("slow",0.8);
 
-    var $popup1=$("#popup1");
+    var $popup1=$("#popup-main");
 
     $popup1.css("top", (dheight-$popup1.height())/2);
 
