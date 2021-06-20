@@ -13,9 +13,13 @@
 
 }
 
+#popup1 {
+    background-color: rgb(241, 240, 240);
+}
+
 #background{
 
-    position: absolute;
+    position: relative;
 
     background:white;
 
@@ -42,4 +46,10 @@ a.close{
     box-shadow: 2px 2px gray;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.tile-popup {
+    padding: 5px;
+    color: white;
+    font-size: 20px;
 }
