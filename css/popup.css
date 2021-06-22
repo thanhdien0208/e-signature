@@ -52,3 +52,14 @@
     cursor: pointer;
     border-radius: 5px;
     }
+/* Responsive */
+@media screen and (max-width: 800px) {
+    .popup-content {
+        width: 300px;
+        height: 300px;
+        }
+    #sig-canvas {
+        width: 250px;
+        height: 180px;
+    }
+  }
