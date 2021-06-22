@@ -46,9 +46,8 @@
                                 </form>
                             </fieldset>
                         </div>
-                    </div>
-    
-    <button id="button-open">Click vào ký tên</button>
+                    
+    <button id="popup-btn">Click vào ký tên</button>
     <br/>
             <div class="row">
                 <div class="col-md-12">
@@ -89,31 +88,31 @@
     
     </div>
     
-    <!-- POPUP CONTENT -->
-    
-    <div id="popup-main" class="popup">
-    
-    <div class="tile-popup">Title<a href="#" class="close">X</a></div>
-    
-    <div class="sig-tab" align="center"> 
-            <div class="row">
-                <div class="col-md-12">
-                    <canvas id="sig-canvas" width="300" height="180">
-                        Trình duyệt của bạn không hỗ trợ tính năng này!
-                    </canvas>
+                <!-- POPUP CONTENT -->
+                
+                <div class="popup">
+                    <div class="popup-content">
+                <div class="tile-popup">Ký Tên Điện Tử<a href="#" class="close-btn">X</a></div>
+                
+                <div class="sig-tab" align="center"> 
+                        <div class="row">
+                            <div class="col-md-12">
+                                <canvas id="sig-canvas" width="300" height="180">
+                                    Trình duyệt của bạn không hỗ trợ tính năng này!
+                                </canvas>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <button class="btn btn-primary" id="sig-submitBtn">Lưu chữ ký</button>
+                                <button class="btn btn-default" id="sig-clearBtn">Xoá chữ ký</button>
+                            </div>
+                        </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-12">
-                    <button class="btn btn-primary" id="sig-submitBtn">Lưu chữ ký</button>
-                    <button class="btn btn-default" id="sig-clearBtn">Xoá chữ ký</button>
-                </div>
-            </div>
-    </div>
-</div>
+        </div>
     <!-- END POPUP CONTENT -->  
-    <div id="background"></div>
-            </div>
+</div>
         <!-- Lybrary Javascript --> 
         <script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
         <script src="./js/canvas.js"></script>
@@ -127,6 +126,7 @@
             download.setAttribute("href", image);
         }
         </script>
+        
         </body>
         
         </html>
