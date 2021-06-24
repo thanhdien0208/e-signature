@@ -10,8 +10,8 @@ closeBtn.onclick = function(){
 modal.style.display = "none"
 }
 // Đóng khi nhấp chuột vào bất cứ khu vực nào trên màn hình
-element.addEventListener("click", function(e){
-if (e.target == popup){
-modal.style.display = "none"
-}
-});
+window.onclick = function(e){
+    if(e.target == popup){
+    modal.style.display = "none"
+    }
+    }

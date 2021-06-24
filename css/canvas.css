@@ -1,12 +1,23 @@
-
-#sig-canvas {
+/* CSS */
+/* #sig-canvas {
   width: 300px;
   height: 180px;
   background-color: white;
   border: 2px dotted #CCCCCC;
   border-radius: 15px;
   cursor: crosshair;
-  }
+  } */
+body{
+  overflow-x: hidden;
+}
+.pad{
+  width: 300px;
+  height: 180px;
+  background-color: white;
+  border: 2px dotted #CCCCCC;
+  border-radius: 15px;
+  cursor: crosshair;
+}
 #sig-image {
   background-color: white;
   border: 1px solid #CCCCCC;
