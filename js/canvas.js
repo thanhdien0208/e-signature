@@ -1,17 +1,17 @@
 (function() {
-    window.requestAnimFrame = (function(callback) {
-      return window.requestAnimationFrame ||
-        window.webkitRequestAnimationFrame ||
-        window.mozRequestAnimationFrame ||
-        window.oRequestAnimationFrame ||
-        window.msRequestAnimaitonFrame ||
-        function(callback) {
-          window.setTimeout(callback, 1000 / 60);
-        };
-    })();
+    // window.requestAnimFrame = (function(callback) {
+    //   return window.requestAnimationFrame ||
+    //     window.webkitRequestAnimationFrame ||
+    //     window.mozRequestAnimationFrame ||
+    //     window.oRequestAnimationFrame ||
+    //     window.msRequestAnimaitonFrame ||
+    //     function(callback) {
+    //       window.setTimeout(callback, 1000 / 60);
+    //     };
+    // })();
   
     var canvas = document.getElementById("pad");
-    var ctx = canvas.getContext("2d");
+    // var ctx = canvas.getContext("2d");
     // ctx.strokeStyle = "#222222";
     // ctx.lineWidth = 1;
   
