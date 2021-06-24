@@ -22,63 +22,63 @@
     };
     var lastPos = mousePos;
   
-    canvas.addEventListener("mousedown", function(e) {
-      drawing = true;
-      lastPos = getMousePos(canvas, e);
-    }, false);
+    // canvas.addEventListener("mousedown", function(e) {
+    //   drawing = true;
+    //   lastPos = getMousePos(canvas, e);
+    // }, false);
   
-    canvas.addEventListener("mouseup", function(e) {
-      drawing = false;
-    }, false);
+    // canvas.addEventListener("mouseup", function(e) {
+    //   drawing = false;
+    // }, false);
   
-    canvas.addEventListener("mousemove", function(e) {
-      mousePos = getMousePos(canvas, e);
-    }, false);
+    // canvas.addEventListener("mousemove", function(e) {
+    //   mousePos = getMousePos(canvas, e);
+    // }, false);
   
-    // Add touch event support for mobile
-    canvas.addEventListener("touchstart", function(e) {
+    // // Add touch event support for mobile
+    // canvas.addEventListener("touchstart", function(e) {
   
-    }, false);
+    // }, false);
   
-    canvas.addEventListener("touchmove", function(e) {
-      var touch = e.touches[0];
-      var me = new MouseEvent("mousemove", {
-        clientX: touch.clientX,
-        clientY: touch.clientY
-      });
-      canvas.dispatchEvent(me);
-    }, false);
+    // canvas.addEventListener("touchmove", function(e) {
+    //   var touch = e.touches[0];
+    //   var me = new MouseEvent("mousemove", {
+    //     clientX: touch.clientX,
+    //     clientY: touch.clientY
+    //   });
+    //   canvas.dispatchEvent(me);
+    // }, false);
   
-    canvas.addEventListener("touchstart", function(e) {
-      mousePos = getTouchPos(canvas, e);
-      var touch = e.touches[0];
-      var me = new MouseEvent("mousedown", {
-        clientX: touch.clientX,
-        clientY: touch.clientY
-      });
-      canvas.dispatchEvent(me);
-    }, false);
+    // canvas.addEventListener("touchstart", function(e) {
+    //   mousePos = getTouchPos(canvas, e);
+    //   var touch = e.touches[0];
+    //   var me = new MouseEvent("mousedown", {
+    //     clientX: touch.clientX,
+    //     clientY: touch.clientY
+    //   });
+    //   canvas.dispatchEvent(me);
+    // }, false);
   
-    canvas.addEventListener("touchend", function(e) {
-      var me = new MouseEvent("mouseup", {});
-      canvas.dispatchEvent(me);
-    }, false);
+    // canvas.addEventListener("touchend", function(e) {
+    //   var me = new MouseEvent("mouseup", {});
+    //   canvas.dispatchEvent(me);
+    // }, false);
   
-    function getMousePos(canvasDom, mouseEvent) {
-      var rect = canvasDom.getBoundingClientRect();
-      return {
-        x: mouseEvent.clientX - rect.left,
-        y: mouseEvent.clientY - rect.top
-      }
-    }
+    // function getMousePos(canvasDom, mouseEvent) {
+    //   var rect = canvasDom.getBoundingClientRect();
+    //   return {
+    //     x: mouseEvent.clientX - rect.left,
+    //     y: mouseEvent.clientY - rect.top
+    //   }
+    // }
   
-    function getTouchPos(canvasDom, touchEvent) {
-      var rect = canvasDom.getBoundingClientRect();
-      return {
-        x: touchEvent.touches[0].clientX - rect.left,
-        y: touchEvent.touches[0].clientY - rect.top
-      }
-    }
+    // function getTouchPos(canvasDom, touchEvent) {
+    //   var rect = canvasDom.getBoundingClientRect();
+    //   return {
+    //     x: touchEvent.touches[0].clientX - rect.left,
+    //     y: touchEvent.touches[0].clientY - rect.top
+    //   }
+    // }
   
     function renderCanvas() {
       if (drawing) {
