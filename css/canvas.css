@@ -9,7 +9,8 @@
   } */
 body{
   overflow-x: hidden;
-  overflow-y: hidden;
+  margin: 0;
+  top: 0;
 }
 .pad{
   width: 300px;
@@ -63,6 +64,7 @@ button {
   color: white;
   padding: 5px;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .btn-primary {
@@ -70,6 +72,7 @@ button {
   color: white;
   padding: 5px;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
 }
 
 .btn-update{
@@ -77,6 +80,7 @@ button {
   color: white;
   padding: 5px;
   border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
 }
 .contract-Code {
   display: none;
