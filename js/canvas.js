@@ -95,17 +95,17 @@ document.body.addEventListener("touchstart", function(e) {
     if (e.target == canvas) {
       e.preventDefault();
     }
-  }, false);
+  }, {passive: false});
   document.body.addEventListener("touchend", function(e) {
     if (e.target == canvas) {
       e.preventDefault();
     }
-  }, false);
+  }, {passive: false});
   document.body.addEventListener("touchmove", function(e) {
     if (e.target == canvas) {
       e.preventDefault();
     }
-  }, false);
+  }, {passive: false});
 
   (function drawLoop() {
     requestAnimFrame(drawLoop);
