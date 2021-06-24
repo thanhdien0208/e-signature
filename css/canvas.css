@@ -9,6 +9,7 @@
   } */
 body{
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 .pad{
   width: 300px;
